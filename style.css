@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --primary-color: #0093b8 ;
+    --primary-color-dark: #566269;
+    --text-dark: #0f172a; 
+    --text-light: #647464; 
+    --extra-light: #f5f3ff; 
+    --paragraph-light-text: #ffffff; 
+    --test-blue: #76cdff;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+nav{
+    padding: 1.5rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.nav__logo{
+    color: var(--primary-color);
+}
+
+.nav__links{
+    list-style: none;
+    display:flex ;
+    align-items: center ;
+    gap: 4rem;
+}
+
+.nav__link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.nav__link:hover {
+   color: var(--primary-color); 
+}
+
+.social__icons{
+    display: flex;
+    align-items:center;
+    gap: 1rem;
+}
+
+.social__icons .icon {
+    width: 3rem;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 1.25rem;
+    color: var(--primary-color-dark);
+    background-color: var(--extra-light);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social__icons .icon i{
+    transition: 0.3s;
+}
+
+.social__icons .icon:hover{
+    box-shadow: 0px 5px 15px var(--extra-light);
+}
+
+.social__icons.icon:hover i{
+    scale: 1.2;
+}
+main{
+    flex: 1;
+    background-image: url("assets/Personal Photo BG Image.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    max-width: 500px;
+    display: grid;
+    gap: 2rem;
+}
+
+.container h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--paragraph-light-text);
+    padding: 1%
+}
+
+.container h1:hover{
+    background: #4b555a;
+    color: var(--test-blue);
+    margin: auto;
+    transition: .9s;
+}
+
+.container p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--paragraph-light-text);
+    padding: 5%;
+}
+
+.container p:hover{
+    background: #4b555a;
+    color: var(--test-blue);
+    margin: auto;
+    transition: .9s;
+}
+
+form input{
+    padding: .75rem 1rem;
+    width: 300px;
+    font-size: 1 rem;
+    outline: none;
+    border: 1px solid var(--text-light);
+    background-color: var(--extra-light);
+}
+
+form button{
+    padding: .75rem 1rem;
+    border: var(--test-blue);
+    background: #4b555a;
+    color: var(--test-blue);
+    color: var(--extra-light);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.9;
+}
+
+form button:hover{
+    background: #4b555a;
+    border: 1px solid var(--primary-color-dark);
+    color: var(--test-blue);
+    margin: auto;
+    transition: .9s;
+}
+
