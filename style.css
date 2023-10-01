@@ -107,14 +107,18 @@ height: 100vh;
     transform: translate(-50%,-50%);
     max-width: 500px;
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2%;
 }
 
 .container h1{
+    display: flex;
     font-size: 4rem;
     font-weight: 700;
     color: var(--paragraph-light-text);
     padding: 5%
+    
 }
 
 .container h1:hover{
@@ -125,10 +129,11 @@ height: 100vh;
 }
 
 .container p{
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.7rem;
+    font-weight: 200;
     color: var(--paragraph-light-text);
     padding: 5%;
+    justify-content: baseline;
 }
 
 .container p:hover{
@@ -172,13 +177,27 @@ form button:hover{
     flex: auto;
     justify-content: right;
     background-color: #0f172a;
+    border: #0093b8;
+    border-width: 1px;
+    outline-width: 1px;
+    outline: #0093b8;
+    outline-style: auto;
+}
 
+.mainProject{
+    border: #0093b8;
+    border-width: 1px;
+    outline-width: 1px;
+    outline: #0093b8;
+    outline-style: auto;
 }
 
 h2{
-    font-size: 400%;
-    padding: 3%;
+    font-size: 370%;
+    padding: 4%;
     color: var(--primary-color);
+    justify-content: center;
+    background-color: #0f172a;
 }
 
 .image-resize-mainProject{
@@ -193,11 +212,84 @@ h2{
     flex-wrap: wrap;
     justify-content: right;
     background-color: #0f172a;
+    border: #0093b8;
+    border-width: 1px;
+    outline-width: 1px;
+    outline: #0093b8;
+    outline-style: auto;
     }
+
+.subproject{
+    border: #0093b8;
+    border-width: 1px;
+    outline-width: 1px;
+    outline: #0093b8;
+    outline-style: auto;
+}
 
 .image-resize{
     height: 246px;
     object-fit: cover;
     object-position: center center;
     width: 640px;
+}
+
+form{
+    display: flex;
+    justify-content: right;
+    margin: auto;
+
+}
+
+h3{
+    font-size: 370%;
+    padding: 4%;
+    color: var(--primary-color);
+    justify-content: center;
+}
+
+h4{
+    font-size: 100%;
+    color: var(--primary-color); 
+    justify-content: center;
+    margin-right: 3%;
+}
+
+h5{
+    font-size: 100%;
+    justify-content: right;
+    padding-right: 1%;
+    padding-left: 10%;
+    color: #0093b8;
+}
+
+h5:hover{    
+    color: rgb(253, 163, 130);
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.9s;
+}
+
+.Contact-container{
+    display: flex;
+    flex-shrink: 50%;
+    justify-content: right;
+    background-color: #0f172a;
+    border: #0093b8;
+    border-width: 1px;
+    outline-width: 1px;
+    outline: #0093b8;
+    outline-style: auto;
+    margin: auto;
+}
+
+footer{
+    display: flex;
+    background-color: #0f172a;
+  justify-content: center;
+    border: #0093b8;
+    border-width: 1px;
+    outline-width: 1px;
+    outline: #0093b8;
+    outline-style: auto;
 }
