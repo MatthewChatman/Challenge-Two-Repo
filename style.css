@@ -242,10 +242,13 @@ form{
 }
 
 h3{
-    font-size: 370%;
+    font-size: 175%;
     padding: 4%;
     color: var(--primary-color);
-    justify-content: center;
+    justify-content: right;
+    display: flex;
+    -ms-flex-align: right;
+    align-items: right;
 }
 
 h4{
@@ -272,7 +275,7 @@ h5:hover{
 
 .Contact-container{
     display: flex;
-    flex-shrink: 50%;
+    align-items: end;
     justify-content: right;
     background-color: #0f172a;
     border: #0093b8;
