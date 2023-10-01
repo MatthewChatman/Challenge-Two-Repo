@@ -11,13 +11,13 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav id="top">
         <div class="nav__logo"> M<span>C.</span></div>
-        <ul class="nav__links"></ul>
-            <li class="nav__link">About Me</li>
-            <li class="nav__link">Work</li>
-            <li class="nav__link">Contact</li>
-            <li class="nav__link">Resume</li>
+        <ul class="nav__links">
+            <li><a href="#about"class="nav__link">About Me</a></li>
+            <li><a href="#work"class="nav__link">Work</a></li>
+            <li><a href="#contact"class="nav__link">Contact</a></li>
+            <li><a href="#resume"class="nav__link">Resume</a></li>
         </ul>
         <div class="social__icons">
             <div class="icon"><i class="ri-mail-line"></i></div>
@@ -25,26 +25,38 @@
             <div class="icon"><i class="ri-facebook-line"></i></div>
         </div>
     </nav>
-    <main> <div class="container">
-        <h1>
-            Web Development Portfolio
-        </h1>
-        <p>
-            Hello! My name is Matthew Chatman. I am a student currently working my way through a Full Stack Web Development Bootcamp. It is my goal to learn the fundamental concepts of web development, including HTML, CSS, and JavaScript.
-        </p>
-        <form>
-            <input type="text" />
-            <button>Send mail</button>
-
-        </form>
-    </div>
-    <!-- <section class="card">
-        <div>
-        <img src="assets/LED Wall Image.jpg" alt="LED Wall" />
-        <p>Sample Project: Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas vel nostrum omnis officia exercitationem explicabo illum velit perspiciatis placeat modi optio, voluptate expedita. Voluptas assumenda voluptatum excepturi similique nisi.</p>
-    </div>
-    </section> -->
+    <main> 
+            <div class="background-image"></div>
+        <section>
+        <div class="container">
+            <h1 id="about"> Web Development Portfolio</h1>
+                <p>
+                Hello! My name is Matthew Chatman. I am a student currently working my way through a Full Stack Web Development Bootcamp. It is my goal to learn the fundamental concepts of web development, including HTML, CSS, and JavaScript.
+                </p>
+            </div>
+    </section>
+    <container-2>
+    <div class="mainProject-container">
+        <h2 id="work">Sample Projects</h2>
+    <section class= "mainProject"><img src="assets/LED Wall Image.jpg" alt="" class="image-responsive-mainProject image-resize-mainProject"></section>
+</container-2>
+</div>
+        <section class="subproject-container">
+                <section class="subproject"><img src="assets/Sample 4.jpg" alt="" class="image-responsive image-resize"></section>
+                <section class="subproject"><img src="assets/Sample 3.jpg" alt="" class="image-responsive image-resize"></section>
+                <section class="subproject"><img src="assets/Sample 2.png" alt="" class="image-responsive image-resize"></section>
+                <section class="subproject"><img src="assets/Sample 5.jpg" alt="" class="image-responsive image-resize"></section>
+                <section class="subproject"><img src="assets/Sample 1.jpg" alt="" class="image-responsive image-resize"></section>
+            </section>
+        </section>
     </main>
+    <footer>
+        <h3 id="contact">Contact Me</h3>            
+        <form>
+        <input type="text" />
+        <button>Send mail</button>
+        </form>
+    </footer>
 </body>
 </html>
 
